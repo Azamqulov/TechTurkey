@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTurkey - Türkiye'nin Lider Teknoloji ve BT Endüstrisi Şirketi</title>
+    <meta name="description"
+        content="Türkiye'nin lider teknoloji ve BT endüstrisi şirketi. Dünya çapında lider teknoloji çözümleri ve e-ticaret hizmetleri sunuyoruz.">
+    <meta name="keywords"
+        content="Türkiye lider endüstri, dünya lider endüstri, e-ticaret lider endüstri, teknoloji, BT çözümleri">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans">
+    <!-- Particle Background -->
+    <div id="particles-js" class="particles-container"></div>
+
+    <!-- Cookie Consent Popup -->
+    <div id="cookieConsent"
+        class="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-primary to-primary-dark text-white p-4 z-50 hidden bg-gray-700">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <p class="mb-4 md:mb-0"><i class="fas fa-cookie-bite mr-2"></i> Bu web sitesi, size en iyi deneyimi sunmak
+                için çerezleri kullanmaktadır. Sitemizi kullanmaya devam ederek, çerez politikamızı kabul etmiş
+                olursunuz.</p>
+            <div class="flex space-x-4">
+                <button id="acceptCookies" class="btn-glow px-4 py-2 rounded">Kabul Et</button>
+                <a href="cookie-policy.html"
+                    class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-4 py-2 rounded transition duration-300">Daha
+                    Fazla Bilgi</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-primary to-primary-dark text-white sticky top-0 z-40 shadow-lg bg-gray-800">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="logo-container mr-3">
+                        <svg class="logo-svg" viewBox="0 0 50 50" width="40" height="40">
+                            <circle cx="25" cy="25" r="20" fill="white" />
+                            <path d="M25 10 L40 25 L25 40 L10 25 Z" fill="var(--color-primary)" />
+                            <circle cx="25" cy="25" r="5" fill="var(--color-secondary)" />
+                        </svg>
+                    </div>
+                    <h1 class="text-3xl font-bold tech-text">TechTurkey</h1>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+                        <li><a href="#hizmetler" class="nav-link">Hizmetler</a></li>
+                        <li><a href="#hakkimizda" class="nav-link">Hakkımızda</a></li>
+                        <li><a href="#iletisim" class="nav-link">İletişim</a></li>
+                    </ul>
+                </nav>
+                <button id="mobileMenuToggle" class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden mt-4 hidden animate__animated animate__fadeIn">
+                <ul class="flex flex-col space-y-2">
+                    <li><a href="#"
+                            class="block py-2 px-4 hover:bg-white hover:bg-opacity-10 rounded transition duration-300">Ana
+                            Sayfa</a></li>
+                    <li><a href="#hizmetler"
+                            class="block py-2 px-4 hover:bg-white hover:bg-opacity-10 rounded transition duration-300">Hizmetler</a>
+                    </li>
+                    <li><a href="#hakkimizda"
+                            class="block py-2 px-4 hover:bg-white hover:bg-opacity-10 rounded transition duration-300">Hakkımızda</a>
+                    </li>
+                    <li><a href="#iletisim"
+                            class="block py-2 px-4 hover:bg-white hover:bg-opacity-10 rounded transition duration-300">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-20 relative overflow-hidden">
+        <div class="hero-bg-animation"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 animate__animated animate__fadeInDown">Türkiye'nin
+                Lider Teknoloji ve BT Endüstrisi Şirketi</h2>
+            <p class="text-xl text-white mb-8 animate__animated animate__fadeInUp animate__delay-1s">Yenilikçi çözümler
+                ve üstün hizmet kalitesiyle geleceği şekillendiriyoruz</p>
+            <a href="#iletisim"
+                class="btn-glow px-8 py-3 rounded-lg text-lg font-semibold animate__animated animate__fadeInUp animate__delay-2s">Bize
+                Ulaşın</a>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="stat-card animate__animated animate__fadeInUp animate__delay-3s">
+                    <div class="stat-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Tamamlanan Proje</div>
+                </div>
+                <div class="stat-card animate__animated animate__fadeInUp animate__delay-4s">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-count="200">0</div>
+                    <div class="stat-label">Mutlu Müşteri</div>
+                </div>
+                <div class="stat-card animate__animated animate__fadeInUp animate__delay-5s">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Yıllık Deneyim</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="hizmetler" class="py-16 bg-white relative">
+        <div class="container mx-auto px-4">
+            <div class="section-header text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Hizmetlerimiz</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Türkiye'nin lider teknoloji şirketi olarak, işletmenizi
+                    ileriye taşıyacak kapsamlı çözümler sunuyoruz</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <svg class="service-svg" viewBox="0 0 100 100" width="80" height="80">
+                            <circle cx="50" cy="50" r="45" fill="var(--color-primary)" fill-opacity="0.1" />
+                            <path d="M30 40 L30 70 L70 70 L70 40 L50 25 Z" fill="var(--color-primary)"
+                                fill-opacity="0.8" />
+                            <rect x="40" y="55" width="20" height="15" fill="white" />
+                            <rect x="45" y="45" width="10" height="5" fill="white" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Yazılım Geliştirme</h3>
+                    <p class="text-gray-600">Özel ihtiyaçlarınıza uygun, yüksek performanslı yazılım çözümleri
+                        geliştiriyoruz. Modern teknolojiler kullanarak işletmenizi dijital dünyada öne çıkarıyoruz.</p>
+                    <div class="service-features">
+                        <div class="feature-item"><i class="fas fa-check"></i> Web Uygulamaları</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Mobil Uygulamalar</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Kurumsal Yazılımlar</div>
+                    </div>
+                    <a href="#" class="service-link">Daha Fazla <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <svg class="service-svg" viewBox="0 0 100 100" width="80" height="80">
+                            <circle cx="50" cy="50" r="45" fill="var(--color-primary)" fill-opacity="0.1" />
+                            <path d="M25 35 L75 35 L75 75 L25 75 Z" fill="var(--color-primary)" fill-opacity="0.8" />
+                            <path d="M35 25 L65 25 L65 35 L35 35 Z" fill="var(--color-secondary)" />
+                            <rect x="35" y="45" width="30" height="5" fill="white" />
+                            <rect x="35" y="55" width="30" height="5" fill="white" />
+                            <rect x="35" y="65" width="15" height="5" fill="white" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">E-Ticaret Çözümleri</h3>
+                    <p class="text-gray-600">Türkiye'nin lider e-ticaret altyapısını sunuyoruz. Satışlarınızı artıracak,
+                        müşteri deneyimini iyileştirecek kapsamlı e-ticaret platformları geliştiriyoruz.</p>
+                    <div class="service-features">
+                        <div class="feature-item"><i class="fas fa-check"></i> Online Mağaza</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Ödeme Sistemleri</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Stok Yönetimi</div>
+                    </div>
+                    <a href="#" class="service-link">Daha Fazla <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <svg class="service-svg" viewBox="0 0 100 100" width="80" height="80">
+                            <circle cx="50" cy="50" r="45" fill="var(--color-primary)" fill-opacity="0.1" />
+                            <path d="M30 65 C30 40, 70 40, 70 65" fill="var(--color-primary)" fill-opacity="0.8" />
+                            <circle cx="50" cy="30" r="10" fill="var(--color-secondary)" />
+                            <circle cx="30" cy="65" r="8" fill="white" />
+                            <circle cx="50" cy="65" r="8" fill="white" />
+                            <circle cx="70" cy="65" r="8" fill="white" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Bulut Hizmetleri</h3>
+                    <p class="text-gray-600">Dünya standartlarında bulut altyapısı ile işletmenizin verilerini güvende
+                        tutun. Ölçeklenebilir, güvenli ve yüksek performanslı bulut çözümlerimizle tanışın.</p>
+                    <div class="service-features">
+                        <div class="feature-item"><i class="fas fa-check"></i> Veri Depolama</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Yedekleme</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Felaket Kurtarma</div>
+                    </div>
+                    <a href="#" class="service-link">Daha Fazla <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Animation Section -->
+    <section class="py-16 bg-gradient-to-r from-gray-100 to-gray-200 relative overflow-hidden">
+        <div class="tech-animation-bg">
+            <div class="tech-circle"></div>
+            <div class="tech-circle"></div>
+            <div class="tech-circle"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="section-header text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Teknoloji Çözümlerimiz</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Dünya standartlarında teknoloji çözümleri ile
+                    işletmenizi geleceğe taşıyoruz</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="tech-card" data-aos="zoom-in">
+                    <div class="tech-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Geliştirme</h3>
+                    <div class="tech-progress">
+                        <div class="tech-progress-bar" style="width: 95%"></div>
+                    </div>
+                    <span class="tech-percent">95%</span>
+                </div>
+
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="tech-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobil Uygulama</h3>
+                    <div class="tech-progress">
+                        <div class="tech-progress-bar" style="width: 90%"></div>
+                    </div>
+                    <span class="tech-percent">90%</span>
+                </div>
+
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Veri Analizi</h3>
+                    <div class="tech-progress">
+                        <div class="tech-progress-bar" style="width: 85%"></div>
+                    </div>
+                    <span class="tech-percent">85%</span>
+                </div>
+
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Siber Güvenlik</h3>
+                    <div class="tech-progress">
+                        <div class="tech-progress-bar" style="width: 92%"></div>
+                    </div>
+                    <span class="tech-percent">92%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="hakkimizda" class="py-16 ">
+        <div class="container mx-auto px-4">
+            <div class="section-header text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Hakkımızda</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Türkiye'nin lider teknoloji şirketi olarak hikayemiz</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 relative" data-aos="fade-right">
+                    <div class="about-image-container">
+                        <div class="about-image-bg"></div>
+                        <div class="about-image-frame">
+                            <div class="about-image-content">
+                                <svg class="about-svg" viewBox="0 0 500 400" width="100%" height="100%">
+                                    <defs>
+                                        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="var(--color-primary)" stop-opacity="0.8" />
+                                            <stop offset="100%" stop-color="var(--color-secondary)"
+                                                stop-opacity="0.8" />
+                                        </linearGradient>
+                                    </defs>
+                                    <!-- Building -->
+                                    <rect x="150" y="100" width="200" height="250" fill="url(#bgGradient)" rx="5" />
+                                    <!-- Windows -->
+                                    <rect x="170" y="120" width="40" height="40" fill="white" opacity="0.7" />
+                                    <rect x="230" y="120" width="40" height="40" fill="white" opacity="0.7" />
+                                    <rect x="290" y="120" width="40" height="40" fill="white" opacity="0.7" />
+                                    <rect x="170" y="180" width="40" height="40" fill="white" opacity="0.7" />
+                                    <rect x="230" y="180" width="40" height="40" fill="white" opacity="0.7" />
+                                    <rect x="290" y="180" width="40" height="40" fill="white" opacity="0.7" />
+                                    <rect x="170" y="240" width="40" height="40" fill="white" opacity="0.7" />
+                                    <rect x="230" y="240" width="40" height="40" fill="white" opacity="0.7" />
+                                    <rect x="290" y="240" width="40" height="40" fill="white" opacity="0.7" />
+                                    <!-- Door -->
+                                    <rect x="230" y="300" width="40" height="50" fill="white" opacity="0.9" />
+                                    <!-- Server Towers -->
+                                    <rect x="50" y="200" width="60" height="150" fill="var(--color-primary)" rx="5" />
+                                    <rect x="60" y="210" width="40" height="10" fill="white" opacity="0.5" />
+                                    <rect x="60" y="230" width="40" height="10" fill="white" opacity="0.5" />
+                                    <rect x="60" y="250" width="40" height="10" fill="white" opacity="0.5" />
+                                    <rect x="60" y="270" width="40" height="10" fill="white" opacity="0.5" />
+                                    <rect x="60" y="290" width="40" height="10" fill="white" opacity="0.5" />
+                                    <rect x="60" y="310" width="40" height="10" fill="white" opacity="0.5" />
+                                    <rect x="60" y="330" width="40" height="10" fill="white" opacity="0.5" />
+                                    <!-- Network Lines -->
+                                    <path d="M110 250 L150 250" stroke="var(--color-secondary)" stroke-width="3"
+                                        stroke-dasharray="5,5" class="network-line" />
+                                    <path d="M350 250 L400 250 L400 150 L450 150" stroke="var(--color-secondary)"
+                                        stroke-width="3" stroke-dasharray="5,5" class="network-line" />
+                                    <!-- Cloud -->
+                                    <circle cx="450" cy="120" r="30" fill="var(--color-primary)" opacity="0.8" />
+                                    <circle cx="480" cy="130" r="20" fill="var(--color-primary)" opacity="0.8" />
+                                    <circle cx="430" cy="130" r="15" fill="var(--color-primary)" opacity="0.8" />
+                                    <!-- Data Symbols -->
+                                    <text x="445" y="125" font-family="Arial" font-size="10" fill="white">DATA</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-6">Türkiye'nin Teknoloji Lideri</h2>
+                    <p class="text-gray-700 mb-4">
+                        2005 yılında kurulan şirketimiz, <span class="text-primary font-semibold">Türkiye'nin lider
+                            teknoloji ve BT endüstrisi şirketi</span> olarak sektörde öncü konumdadır. Yenilikçi
+                        çözümlerimiz ve müşteri odaklı yaklaşımımızla, işletmelerin dijital dönüşüm süreçlerinde
+                        güvenilir bir iş ortağı olarak hizmet veriyoruz.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        <span class="text-primary font-semibold">Dünya çapında lider teknoloji</span> trendlerini
+                        yakından takip ederek, en son yenilikleri Türkiye pazarına sunuyoruz. Uzman ekibimiz, her
+                        projeye özel çözümler geliştirerek müşterilerimizin ihtiyaçlarını en üst düzeyde karşılıyor.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="text-primary font-semibold">E-ticaret alanında lider</span> çözümlerimizle,
+                        işletmelerin online satış kanallarını güçlendiriyor, rekabet avantajı sağlıyoruz. Türkiye'nin
+                        dijital geleceğini şekillendirme vizyonuyla çalışmalarımıza devam ediyoruz.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="about-feature-text">Uzman Kadro</div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="about-feature-text">Yenilikçi Çözümler</div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="about-feature-text">7/24 Destek</div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="about-feature-text">Güvenilir Altyapı</div>
+                        </div>
+                    </div>
+
+                    <a href="#iletisim" class="btn-primary px-6 py-3 rounded-lg inline-block">Bizimle Çalışın</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gradient-to-r from-gray-100 to-gray-200 relative overflow-hidden">
+        <div class="testimonial-pattern"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="section-header text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Müşterilerimiz Ne Diyor?</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Başarı hikayelerimiz ve müşteri deneyimleri</p>
+            </div>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"TechTurkey ile çalışmak, şirketimizin dijital dönüşümünde en doğru
+                            karar oldu. Profesyonel ekipleri ve yenilikçi çözümleriyle beklentilerimizin ötesinde bir
+                            hizmet aldık."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                               <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aHVtYW5zJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">Ahmet Yılmaz</h4>
+                                <p class="testimonial-position">ABC Şirketi CEO'su</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"TechTurkey ile çalışmak, şirketimizin dijital dönüşümünde en doğru
+                            karar oldu. Profesyonel ekipleri ve yenilikçi çözümleriyle beklentilerimizin ötesinde bir
+                            hizmet aldık."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <svg viewBox="0 0 100 100" width="60" height="60">
+                                    <circle cx="50" cy="50" r="50" fill="var(--color-primary)" />
+                                    <circle cx="50" cy="40" r="15" fill="white" />
+                                    <path d="M50 60 C30 60, 20 80, 20 100 L80 100 C80 80, 70 60, 50 60" fill="white" />
+                                </svg>
+                            </div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">Ahmet Yılmaz</h4>
+                                <p class="testimonial-position">ABC Şirketi CEO'su</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">"Bulut altyapı çözümleri konusunda TechTurkey ile çalışmak, veri
+                            güvenliğimizi ve sistem performansımızı üst düzeye çıkardı. Kesinlikle sektörün en iyisi."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <svg viewBox="0 0 100 100" width="60" height="60">
+                                    <circle cx="50" cy="50" r="50" fill="var(--color-primary)" />
+                                    <circle cx="50" cy="40" r="15" fill="white" />
+                                    <path d="M50 60 C30 60, 20 80, 20 100 L80 100 C80 80, 70 60, 50 60" fill="white" />
+                                </svg>
+                            </div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">Mehmet Demir</h4>
+                                <p class="testimonial-position">123 Holding CTO'su</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-controls">
+                <button id="prevTestimonial" class="testimonial-control-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonial-dots">
+                    <span class="testimonial-dot active"></span>
+                    <span class="testimonial-dot"></span>
+                    <span class="testimonial-dot"></span>
+                </div>
+                <button id="nextTestimonial" class="testimonial-control-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="iletisim" class="py-16      relative">
+        <div class="contact-pattern"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="section-header text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Bize Ulaşın</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Projeleriniz için bizimle iletişime geçin</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 mb-2 font-medium">Adınız Soyadınız</label>
+                                <div class="input-group">
+                                    <div class="input-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <input type="text" id="name" class="form-input" placeholder="Adınız Soyadınız">
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 mb-2 font-medium">E-posta
+                                    Adresiniz</label>
+                                <div class="input-group">
+                                    <div class="input-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <input type="email" id="email" class="form-input" placeholder="E-posta Adresiniz">
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 mb-2 font-medium">Konu</label>
+                                <div class="input-group">
+                                    <div class="input-icon">
+                                        <i class="fas fa-tag"></i>
+                                    </div>
+                                    <input type="text" id="subject" class="form-input" placeholder="Konu">
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2 font-medium">Mesajınız</label>
+                                <div class="input-group">
+                                    <div class="input-icon textarea-icon">
+                                        <i class="fas fa-comment-alt"></i>
+                                    </div>
+                                    <textarea id="message" rows="5" class="form-input"
+                                        placeholder="Mesajınız"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-primary w-full py-3 rounded-lg">
+                                <i class="fas fa-paper-plane mr-2"></i> Gönder
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <div class="contact-info-container">
+                        <div class="contact-map">
+                            <div class="map-container">
+                                <svg class="map-svg" viewBox="0 0 500 300" width="100%" height="100%">
+                                    <!-- Map Background -->
+                                    <rect x="0" y="0" width="500" height="300" fill="#f0f4f8" />
+
+                                    <!-- Roads -->
+                                    <path d="M0 150 L500 150" stroke="#d1d5db" stroke-width="10" />
+                                    <path d="M250 0 L250 300" stroke="#d1d5db" stroke-width="8" />
+                                    <path d="M100 50 L400 50" stroke="#d1d5db" stroke-width="6" />
+                                    <path d="M100 250 L400 250" stroke="#d1d5db" stroke-width="6" />
+
+                                    <!-- Buildings -->
+                                    <rect x="120" y="70" width="40" height="60" fill="#9ca3af" />
+                                    <rect x="180" y="80" width="30" height="50" fill="#9ca3af" />
+                                    <rect x="230" y="70" width="50" height="60" fill="#9ca3af" />
+                                    <rect x="300" y="80" width="35" height="50" fill="#9ca3af" />
+                                    <rect x="350" y="70" width="40" height="60" fill="#9ca3af" />
+
+                                    <rect x="120" y="170" width="40" height="60" fill="#9ca3af" />
+                                    <rect x="180" y="180" width="30" height="50" fill="#9ca3af" />
+                                    <rect x="300" y="180" width="35" height="50" fill="#9ca3af" />
+                                    <rect x="350" y="170" width="40" height="60" fill="#9ca3af" />
+
+                                    <!-- Company Location -->
+                                    <rect x="230" y="170" width="50" height="60" fill="var(--color-primary)" />
+
+                                    <!-- Location Pin -->
+                                    <circle cx="255" cy="200" r="15" fill="var(--color-secondary)" />
+                                    <path d="M255 190 L255 210" stroke="white" stroke-width="3" />
+                                    <path d="M245 200 L265 200" stroke="white" stroke-width="3" />
+
+                                    <!-- Animation Elements -->
+                                    <circle cx="150" cy="150" r="5" fill="var(--color-primary)" opacity="0.6"
+                                        class="map-pulse" />
+                                    <circle cx="350" cy="150" r="5" fill="var(--color-primary)" opacity="0.6"
+                                        class="map-pulse map-pulse-delay" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <h4>Adres:</h4>
+                                    <p>Levent Mahallesi, Teknoloji Caddesi No:123, 34330 Beşiktaş/İstanbul</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <h4>Telefon:</h4>
+                                    <p>+90 212 123 45 67</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <h4>E-posta:</h4>
+                                    <p>info@techturkey.com.tr</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <h4>Çalışma Saatleri:</h4>
+                                    <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social">
+                            <a href="#" class="contact-social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="contact-social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="contact-social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="contact-social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12 relative overflow-hidden">
+        <div class="footer-pattern"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="logo-container mr-3">
+                            <svg class="logo-svg" viewBox="0 0 50 50" width="40" height="40">
+                                <circle cx="25" cy="25" r="20" fill="white" />
+                                <path d="M25 10 L40 25 L25 40 L10 25 Z" fill="var(--color-primary)" />
+                                <circle cx="25" cy="25" r="5" fill="var(--color-secondary)" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold tech-text">TechTurkey</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Türkiye'nin lider teknoloji ve BT endüstrisi şirketi olarak, yenilikçi çözümlerle geleceği
+                        şekillendiriyoruz.
+                    </p>
+                    <div class="footer-newsletter">
+                        <h4 class="text-sm font-semibold mb-2">Bültenimize Abone Olun</h4>
+                        <div class="footer-newsletter-form">
+                            <input type="email" placeholder="E-posta Adresiniz" class="footer-newsletter-input">
+                            <button class="footer-newsletter-button">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 footer-heading">Hızlı Bağlantılar</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Ana Sayfa</a></li>
+                        <li><a href="#hizmetler" class="footer-link"><i class="fas fa-chevron-right"></i> Hizmetler</a>
+                        </li>
+                        <li><a href="#hakkimizda" class="footer-link"><i class="fas fa-chevron-right"></i>
+                                Hakkımızda</a></li>
+                        <li><a href="#iletisim" class="footer-link"><i class="fas fa-chevron-right"></i> İletişim</a>
+                        </li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Kariyer</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 footer-heading">Yasal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html" class="footer-link"><i class="fas fa-chevron-right"></i>
+                                Gizlilik Politikası</a></li>
+                        <li><a href="cookie-policy.html" class="footer-link"><i class="fas fa-chevron-right"></i> Çerez
+                                Politikası</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Kullanım Koşulları</a>
+                        </li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> KVKK</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 footer-heading">İletişim</h3>
+                    <ul class="footer-contact">
+                        <li class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Levent Mahallesi, Teknoloji Caddesi No:123, 34330 Beşiktaş/İstanbul</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+90 212 123 45 67</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@techturkey.com.tr</span>
+                        </li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 TechTurkey. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+        <div class="footer-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="var(--color-primary)" fill-opacity="0.1"
+                    d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,208C1248,192,1344,192,1392,192L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
